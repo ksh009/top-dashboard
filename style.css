@@ -69,7 +69,6 @@ body {
 	display: grid;
 	grid-template-rows: auto 1fr;
 	grid-gap: 10px;
-	border: #1992d4 solid 15px;
 }
 
 .row2 h2 {
@@ -91,16 +90,20 @@ body {
 }
 
 .project-card {
-	border-left: 5px solid var(--primary-color);
+	border-left: 5px solid var(--secondary-color);
+	border-radius: 5px;
 	background-color: #fff;
 	margin-bottom: 20px;
 	overflow: hidden;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+	max-height: 250px;
 }
 
 .project-card-header {
-	padding: 20px;
-	background-color: var(--primary-color);
-	color: #fff;
+	margin-top: 10px;
+	padding: 0px 20px;
+	color: var(--main-text-color);
 }
 
 .project-card-header h2 {
@@ -109,19 +112,19 @@ body {
 }
 
 .project-card-body {
-	padding: 20px;
+	padding: 1px 20px;
+	min-height: 90px;
 }
 
 .project-card-footer {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	align-items: center;
-	padding: 20px;
+	padding: 1px 20px;
 }
 
 .project-card-footer button {
-	background-color: var(--secondary-color);
-	color: #fff;
+	color: var(--main-text-color);
 	border: none;
 	padding: 10px 20px;
 	cursor: pointer;
@@ -129,7 +132,7 @@ body {
 }
 
 .project-card-footer button:hover {
-	background-color: var(--tertiary-color);
+	opacity: 72%;
 }
 
 .project-card-footer button i {
