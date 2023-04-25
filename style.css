@@ -22,11 +22,116 @@ body {
 }
 
 :root {
-	--primary-color: #596d48;
-	--secondary-color: #f9fafb;
+	--primary-color: #1992d4;
+	--secondary-color: #f0b429;
+	--tertiary-color: #e2e8f0;
 	--main-text-color: #000000;
 	--secondary-text-color: #ffffff;
 	--input-focus-border-color: #2e5bdb;
 	--input-error-border-color: #d16868;
 	--box-shadow-color: #e8e9e9;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 0.6fr 2.4fr;
+	grid-gap: 5px;
+	height: 100vh;
+}
+
+.side-bar {
+	/* Styling for the navigation bar */
+	background-color: #2e5bdb;
+}
+
+.main-content {
+	display: grid;
+	grid-template-rows: 0.55fr 1.45fr;
+	grid-gap: 5px;
+}
+
+.row1 {
+	/* Styling for the first row */
+	background-color: #596d48;
+	padding: 18px;
+}
+
+.row2 {
+	/* Styling for the second row */
+	background-color: #e8e9e9;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-gap: 5px;
+	padding: 18px;
+}
+
+.row2 .left-col {
+	display: grid;
+	grid-template-rows: auto 1fr;
+	grid-gap: 10px;
+	border: #1992d4 solid 15px;
+}
+
+.row2 h2 {
+	font-size: 2rem;
+	margin-bottom: 10px;
+}
+
+.row2 .left-col .project-cards {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+}
+
+.row2 .right-col {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 10px;
+	border: #d16868 solid 15px;
+}
+
+.project-card {
+	border-left: 5px solid var(--primary-color);
+	background-color: #fff;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.project-card-header {
+	padding: 20px;
+	background-color: var(--primary-color);
+	color: #fff;
+}
+
+.project-card-header h2 {
+	margin: 0;
+	font-size: 24px;
+}
+
+.project-card-body {
+	padding: 20px;
+}
+
+.project-card-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+.project-card-footer button {
+	background-color: var(--secondary-color);
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+.project-card-footer button:hover {
+	background-color: var(--tertiary-color);
+}
+
+.project-card-footer button i {
+	margin-right: 5px;
 }
