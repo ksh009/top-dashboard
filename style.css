@@ -19,6 +19,7 @@ body {
 	font-size: 1.6rem;
 	line-height: 1.5;
 	font-family: 'Norse Bold', sans-serif;
+	overflow-y: hidden;
 }
 
 :root {
@@ -46,8 +47,9 @@ body {
 
 .main-content {
 	display: grid;
-	grid-template-rows: 0.55fr 1.45fr;
+	grid-template-rows: 0.65fr 1.35fr;
 	grid-gap: 5px;
+	background-color: #e8e9e9;
 }
 
 .row1 {
@@ -63,6 +65,8 @@ body {
 	grid-template-columns: 2fr 1fr;
 	grid-gap: 5px;
 	padding: 18px;
+	height: 481px;
+	overflow-y: auto;
 }
 
 .row2 .left-col {
