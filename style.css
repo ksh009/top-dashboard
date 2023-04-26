@@ -257,6 +257,23 @@ body {
 	margin-right: 15px;
 }
 
+.row1 .column .row1_inner-two .col2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 0 50px;
+}
+
+.row1 .column .row1_inner-two .col2 button {
+	padding: 10px;
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	border-radius: 27px;
+	font-size: 16px;
+	cursor: pointer;
+	width: 81%;
+}
+
 /* user nav end */
 
 .row {
