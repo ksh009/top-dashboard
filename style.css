@@ -54,7 +54,7 @@ body {
 
 .row1 {
 	/* Styling for the first row */
-	background-color: #596d48;
+	background-color: var(--secondary-text-color);
 	/* padding: 18px; */
 	height: 100%;
 }
@@ -85,13 +85,6 @@ body {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 10px;
-}
-
-.row2 .right-col {
-	display: grid;
-	grid-template-rows: 1fr 1fr;
-	grid-gap: 10px;
-	border: #d16868 solid 15px;
 }
 
 .project-card {
@@ -155,7 +148,7 @@ body {
 
 .row1 .column .row1_inner-one {
 	height: 50%;
-	background-color: rebeccapurple;
+	/* background-color: rebeccapurple; */
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
@@ -180,7 +173,7 @@ body {
 	margin-left: 15px;
 	width: 100%;
 	display: flex;
-	background-color: #fff;
+	background-color: var(--tertiary-color);
 	border-radius: 20px;
 	padding: 5px 10px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -222,7 +215,7 @@ body {
 
 .row1 .column .row1_inner-two {
 	height: 50%;
-	background-color: aquamarine;
+	/* background-color: aquamarine; */
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
@@ -254,7 +247,7 @@ body {
 	width: 70px;
 	height: 70px;
 	border-radius: 50%;
-	margin-right: 15px;
+	margin: 0 15px 15px 0px;
 }
 
 .row1 .column .row1_inner-two .col2 {
@@ -280,4 +273,47 @@ body {
 	/* Add styles for the rows here */
 	width: 100%;
 	height: 50%;
+}
+
+/* Announcements start*/
+.row2 .right-col {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 10px;
+	padding: 0 5px 0 15px;
+}
+
+.row2 .right-col .right-col_container {
+	display: grid;
+	grid-template-rows: repeat(3, auto);
+	background-color: var(--secondary-text-color);
+	margin-top: 20px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+	height: 350px;
+	border-radius: 5px;
+	padding-top: 15px;
+}
+
+.row2 .right-col .right-col_container .right-col_row {
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-row-gap: 5px;
+	padding: 0 10px 10px 15px;
+}
+
+.row2 .right-col .right-col_container .right-col_row h5 {
+	margin-top: 5px;
+	font-size: 14px;
+}
+
+.row2 .right-col .right-col_container .right-col_row p {
+	margin: 0;
+	font-size: 14px;
+}
+
+.row2 .right-col .right-col_container .right-col_row hr {
+	margin-top: 5px;
+	border: none;
+	border-top: 1px solid #ccc;
 }
