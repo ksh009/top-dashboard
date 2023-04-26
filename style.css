@@ -266,6 +266,10 @@ body {
 	width: 81%;
 }
 
+.row1 .column .row1_inner-two .col2 button:hover {
+	opacity: 72%;
+}
+
 /* user nav end */
 
 .row {
