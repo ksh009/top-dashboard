@@ -144,6 +144,8 @@ body {
 	margin-right: 5px;
 }
 
+/* Search nav Start */
+
 .row1 .column {
 	display: flex;
 	flex-direction: column;
@@ -160,21 +162,21 @@ body {
 	padding: 10px;
 }
 
-.col1 {
+.row1 .column .row1_inner-one .col1 {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	margin-left: 9%;
 }
 
-.col2 {
+.row1 .column .row1_inner-one .col2 {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	margin-right: 9%;
 }
 
-.search {
+.row1 .column .row1_inner-one .search {
 	margin-left: 15px;
 	width: 100%;
 	display: flex;
@@ -184,40 +186,78 @@ body {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.search i {
+.row1 .column .row1_inner-one .search i {
 	margin-right: 5px;
 }
 
-.search input {
+.row1 .column .row1_inner-one .search input {
 	border: none;
 	outline: none;
 	width: 100%;
 }
 
-.user-info {
+.row1 .column .row1_inner-one .user-info {
 	display: flex;
 	align-items: center;
 }
 
-.user-info i {
+.row1 .column .row1_inner-one .user-info i {
 	margin-right: 15px;
 }
 
-.user-info img {
+.row1 .column .row1_inner-one .user-info img {
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
 	margin-right: 15px;
 }
 
-.user-info .username {
+.row1 .column .row1_inner-one .user-info .username {
 	font-weight: bold;
 }
+
+/* Search nav Start */
+
+/* user nav Start */
 
 .row1 .column .row1_inner-two {
 	height: 50%;
 	background-color: aquamarine;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	padding: 0px 10px 0px 74px;
 }
+
+.row1 .column .row1_inner-two .col1 .user-info {
+	display: flex;
+	align-items: center;
+}
+
+.row1 .column .row1_inner-two .col1 .user-info .user-info-copy {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.row1 .column .row1_inner-two .col1 .user-info .user-info-copy p {
+	font-size: 14px;
+	align-self: flex-start;
+}
+
+.row1 .column .row1_inner-two .col1 .user-info .user-info-copy span {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.row1 .column .row1_inner-two .col1 .user-info img {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+
+/* user nav end */
 
 .row {
 	/* Add styles for the rows here */
