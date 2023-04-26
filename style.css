@@ -78,7 +78,7 @@ body {
 
 .row2 h2 {
 	font-size: 2rem;
-	margin-bottom: 10px;
+	margin-bottom: 25px;
 }
 
 .row2 .left-col .project-cards {
@@ -96,7 +96,6 @@ body {
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
 		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 	max-height: 250px;
-	margin-top: 15px;
 }
 
 .project-card-header {
@@ -112,7 +111,7 @@ body {
 
 .project-card-body {
 	padding: 1px 20px;
-	min-height: 90px;
+	min-height: 117px;
 }
 
 .project-card-footer {
@@ -282,6 +281,10 @@ body {
 	grid-template-rows: 1fr 1fr;
 	grid-gap: 10px;
 	padding: 0 5px 0 15px;
+}
+
+.row2 .right-col .announcements-container h2 {
+	margin-bottom: 35px;
 }
 
 .row2 .right-col .right-col_container {
