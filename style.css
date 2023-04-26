@@ -47,7 +47,7 @@ body {
 
 .main-content {
 	display: grid;
-	grid-template-rows: 0.65fr 1.35fr;
+	grid-template-rows: 0.67fr 1.32fr;
 	grid-gap: 5px;
 	background-color: #e8e9e9;
 }
@@ -110,7 +110,7 @@ body {
 
 .project-card-body {
 	padding: 1px 20px;
-	min-height: 117px;
+	min-height: 108px;
 }
 
 .project-card-footer {
